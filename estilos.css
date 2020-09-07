@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Roboto", Arial, sans-serif;
+    background: f2f2f2;
+}
+
+.contenedor {
+    margin: 50px auto;
+    width: 80%;
+    text-align: left;
+}
+
+h1 {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h1::after {
+    content:'';
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background: #F4D35E;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+.numeros {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.numeros .numero input[type=number]{
+    height: 50px;
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid rgb(128, 121, 121);
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+}
+
+.numeros .numero input[type=number]:focus {
+    outline: none;
+    border-bottom: 2px solid #F95738;
+}
+
+.numeros .operador, .resultado {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin: 0 20px;
+    border-bottom: 2px dotted #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.numeros .operador .operacion {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.numeros .igual {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin-left: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+
+h4 {
+    font-weight: 300;
+    font-family: "Roboto", Arial, sans-serif;
+    margin: 30px 0 20px 0;
+}
+
+.operaciones-botones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.operaciones-botones .operaciones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 260px;
+    flex-wrap: wrap;
+}
+.operaciones-botones .operaciones .btn-operacion {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(249, 87, 56);
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.operaciones-botones .operaciones .btn-operacion:hover {
+    background: rgba(249, 87, 56, .8);
+}
+
+.borrar {
+    margin-left: 80px;
+}
+
+.borrar .btn-borrar {
+    width: 100px;
+    height: 40px;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.borrar .btn-borrar:hover {
+    background: rgba(0, 0, 0, .8);
+}

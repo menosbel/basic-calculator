@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1 class="titulo">Calculadora</h3>
+        <div class="numeros">
+                <div class="numero">
+                    <input type="number" id="inputLeft" placeholder="Ingresá un número" name="inputLeft">
+                </div>
+
+                <div class="operador">
+                    <div class="operacion" id="signo"></div>
+                </div>
+
+                <div class="numero">
+                    <input type="number" id="inputRight" placeholder="Ingresá un número" name="inputRight">
+                </div>
+                <div class="igual">=</div>
+                <div class="resultado" id="resultado"></div>
+
+        </div>
+
+        <h4>¿Qué operación querés realizar?</h3>
+        <div class="operaciones-botones">
+            <div class="operaciones">
+                <a class="btn-operacion" id="sumar">+</a>
+                <a class="btn-operacion" id="restar">-</a>
+                <a class="btn-operacion" id="multiplicar">*</a>
+                <a class="btn-operacion" id="dividir">/</a>
+            </div>
+            <div class="borrar">
+                <a class="btn-borrar" id="btn-borrar">Borrar</a>
+            </div>
+        </div>  
+    </div>
+    <script src="efectos.js"></script>
+</body>
+</html>
